@@ -1,0 +1,90 @@
+\documentclass[a4paper,oneside, 11pt]{scrartcl}
+\usepackage[hidelinks, pdfstartview=FitH, pdfpagelayout=OneColumn, pdftex]{hyperref}
+\usepackage[left=1.5cm, right=2.5cm, top=2.5cm, bottom=2cm,a4paper]{geometry}
+
+
+%\usepackage[ngerman]{babel}
+\usepackage[defaultfam,light,tabular,lining]{montserrat} %% Option 'defaultfam'
+%% only if the base font of the document is to be sans serig
+\usepackage[sfdefault,light,medium]{josefin}
+\usepackage[T1]{fontenc}
+
+
+\usepackage{amsmath,amssymb,amsfonts,amstext}
+\usepackage[natural, table, fixpdftex, hyperref]{xcolor}
+\usepackage{url}
+\usepackage{hyperref}	
+\makeatletter
+\let\old@rule\@rule
+\def\@rule[#1]#2#3{\textcolor{black}{\old@rule[#1]{#2}{#3}}}
+\makeatother
+
+\usepackage[pdftex]{graphicx}
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgContents{\rule{.75pt}{\textheight}}
+\SetBgHshift{-2.1cm}
+
+\begin{document}
+\large 
+\mdseries
+\pagestyle{empty}
+\newcolumntype{L}{>{\raggedleft}p{5.5cm}}
+\newcolumntype{R}{p{9.5cm}}
+\setlength{\tabcolsep}{0.5cm}
+\begin{tabular}{LR}
+&\\
+
+{\huge\textbf{PERSONAL DATA}} & \\
+ &
+\begin{wrapfigure}
+	\includegraphics[width=.4\textwidth, height=.4\textheight, keepaspectratio]{photo.JPEG}	
+\end{wrapfigure}
+ 
+  &\\
+  &\\
+   \Large NAME & Adelaide Stucchi \\
+    &\\
+\Large BIRTH & 28/03/1998 Monfalcone (GO), Italia \\
+ &\\
+ \Large CITIZENSHIP & Italian \\
+ &\\
+ \Large EMAIL & adelaide.stucchi@mail.polimi.it
+\\& adelplasters@outlook.com
+\\&\\
+\Large EDUCATION & \\
+&\\
+\small 2012 - 2017 & Liceo Scientifico "Duca degli Abruzzi" (GO) 
+\\&
+82/100
+\\&
+\\\small 2017 - 2020 & Bachelor Degree in Biomedical Engineering at Politecnico di Milano 
+\\&
+Title:\emph{ "Analisi delle variabilità delle caratteristiche di reti microvascolari 3D" }
+\\&
+95/110 
+\\& \\
+\small 2020 -  & Master Degree in Biomedical Engineering -  Technologies for Electronics at Politecnico di Milano  
+\\[1.5\baselineskip]
+&\\
+
+\Large FOREIGN LANGUAGES &\\
+&\\
+ \small English & Cambridge Certificate B2 - TOEIC (955/990) 
+\\& written: good - spoken: good
+\\& \\
+\small German &  written: sufficient - spoken: sufficient \\
+\\&\\
+
+
+\Large SKILLS & C, Python, C++, Matlab 
+\\&\\ 
+\Large LINKS & \url{https://github.com/adelplasters} \\
+
+ 
+
+\end{tabular}
+\end{document}
+
+ 
